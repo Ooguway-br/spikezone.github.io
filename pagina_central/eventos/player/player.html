@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>SpikeZone|Player</title>
+  <link rel="stylesheet" href="player.css">
+  <link rel="icon" href="/images/favicon_io/android-chrome-512x512.png">
+  <link rel="appel-touch-icon" href="/images/favicon_io/apple-touch-icon.png">
+  <meta name="theme-color" content="#FF4500">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+</head>
+<body>
+
+  <!-- Header -->
+  <header>
+    <nav>
+      <button class="back-button" onclick="window.history.back()">Voltar</button>
+    </nav>
+    <h1 id="player-name-title">Carregando...</h1>
+  </header>
+
+<main class="profile-container">
+  <img id="player-avatar" class="player-avatar" src="" alt="Avatar do Jogador">
+  <div class="player-info">
+    <h2 id="player-name" class="player-name-text"></h2>
+    <h3 id="player-role"></h3>
+    <p id="player-team" class="team-name"></p>
+    <h4 class="bio-title">Biografia</h4>
+    <p id="player-bio" class="bio-text"></p>
+  </div>
+</main>
+
+<footer class="valorant-footer">
+  <div class="footer-inner">
+    <h2 class="footer-logo">SpikeZone</h2>
+    <p class="footer-text">Onde os agentes se tornam lendas.</p>
+
+    <div class="footer-links">
+      <a href="#inicio">Início</a>
+      <a href="#eventos">Eventos</a>
+      <a href="#contato">Contato</a>
+      <a href="#valorant">Valorant</a>
+    </div>
+
+    <div class="social-links">
+        <a href="https://x.com" title="x"><i class="fab fa-x"></i></a>
+        <a href="https://instagram.com" title="Instagram"><i class="fab fa-instagram"></i></a>
+        <a href="https://github.com" title="GitHub"><i class="fab fa-github"></i></a>
+        <a href="https://linkedin.com" title="LinkedIn"><i class="fab fa-linkedin"></i></a>
+        <a href="https://discord.com" title="Discord"><i class="fab fa-discord"></i></a>
+    </div>
+    
+    <div class="footer-divider"></div>
+
+    <p class="footer-copy">
+      © 2025 <span>SpikeZone</span> | Inspirado no universo Valorant<br>
+      Desenvolvido por <span class="dev-name">TechEd</span>
+    </p>
+  </div>
+</footer>
+
+<script src="player.js" defer></script>
+<script>
+  document.title = "Jogador | SpikeZone";
+</script>
+</body>
+</html>

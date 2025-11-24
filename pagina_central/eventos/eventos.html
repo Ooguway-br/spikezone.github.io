@@ -1,0 +1,236 @@
+<!doctype html>
+<html lang="pt-BR">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>SpikeZone | Eventos</title>
+  <link rel="stylesheet" href="eventos.css">
+  <link rel="icon" href="/images/favicon_io/android-chrome-512x512.png">
+  <link rel="appel-touch-icon" href="/images/favicon_io/apple-touch-icon.png">
+  <meta name="theme-color" content="#FF4500">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+</head>
+<body>
+  <div class="theme-transition" id="themeTransition"></div>
+  <div id="particles"></div>
+  <div class="neon-particles"></div>
+  <header>
+    <div class="logo-container">
+      <a href="/pagina_central/inicio/inicio.html" class="logo-container">
+        <img src="/images/Logo SpikeZone.png" alt="SpikeZone Logo" class="logo">
+      </a>
+    </div>
+    <nav class="nav-links">
+      <a href="/pagina_central/inicio/inicio.html">Início</a>
+      <a href="/pagina_central/eventos/eventos.html" class="active">Eventos</a>
+      <a href="#teams-section">Times em Destaque</a>
+      <a href="/pagina_central/contato/contato.html">Contato</a>
+    </nav>
+  </header>
+
+  <section id="champ-video">
+    <div class="event-hero">
+      <video id="event-video" autoplay muted playsinline></video>
+      <div id="paused-overlay"></div>
+      <div class="video-controls">
+        <button id="sound-btn" class="sound-toggle">
+          <i class="fa-solid fa-volume-high sound-icon sound-on active"></i>
+          <i class="fa-solid fa-volume-xmark sound-icon sound-off"></i>
+        </button>
+      </div>
+      <button id="playPauseBtn" class="sound-toggle">
+        <i class="fa-solid fa-play"></i>
+      </button>
+    </div>
+  </section>
+
+  <div class="event-content">
+    <h1>Eventos em Destaque</h1>
+    <p>Acompanhe os maiores torneios regionais e mundiais do cenário competitivo de Valorant.</p>
+  </div>
+
+  <!--Linha do Tempo do VCT -->
+  <section id="vct-timeline" class="vct-timeline">
+    <h2 class="section-title">Linha do Tempo do VCT 2026</h2>
+    <div class="timeline-container">
+      <div class="timeline-item">
+        <h3>Stage 1 - Início da Temporada</h3>
+        <p>Os times retornam com novas composições e estratégias após mudanças no roster e patches importantes.</p>
+      </div>
+      <div class="timeline-item">
+        <h3>Stage 2 - Rumo ao Masters</h3>
+        <p>As regiões entram em disputa para garantir a classificação no Masters Global, com partidas decisivas.</p>
+      </div>
+      <div class="timeline-item">
+        <h3>Masters Global</h3>
+        <p>Os melhores times do mundo se enfrentam em um campeonato de elite, recheado de rivalidades icônicas.</p>
+      </div>
+      <div class="timeline-item">
+        <h3>Champions</h3>
+        <p>O maior evento do ano: apenas um se tornará campeão mundial da Riot Games no Valorant Champions Tour.</p>
+      </div>
+    </div>
+  </section>
+
+  <!--Campeões do Valorant -->
+  <section id="champions-teams" class="champions-teams">
+    <h2 class="champions-text">Campeões do Valorant Champions</h2>
+    <p class="champions-text">Conheça os gigantes que conquistaram o título máximo do Valorant. Dados atualizados automaticamente.</p>
+    <div id="teams-list" class="teams-list"></div>
+    <div id="players-list" class="players-list"></div>
+  </section>
+
+  <section id="teams-section" class="teams-section">
+    <h1 class="main-title">Times do VCT em Destaque</h1>
+    <p class="teams-desc">As organizações mais influentes do cenário competitivo mundial.</p>
+    <div id="teams-vct-list">
+      <div class="team-link" data-team="nrg">
+        <div class="vct-team"><img src="/images/nrg-s-fun.png" class="vct-logo"><h4>NRG</h4><h5>A Potência Americana</h5></div>
+      </div>
+      <div class="team-link" data-team="fnatic">
+        <div class="vct-team"><img src="/icons-teams/fnc.png" class="vct-logo"><h4>FNATIC</h4><h5>A Lenda Europeia</h5></div>
+      </div>
+      <div class="team-link" data-team="drx">
+        <div class="vct-team"><img src="/icons-teams/drx-1.png" class="vct-logo"><h4>DRX</h4><h5>A Força Sul-Coreana</h5></div>
+      </div>
+      <div class="team-link" data-team="prx">
+        <div class="vct-team"><img src="/icons-teams/prx.png" class="vct-logo"><h4>Paper Rex</h4><h5>A Caótica Perfeição</h5></div>
+      </div>
+      <div class="team-link" data-team="mibr">
+        <div class="vct-team"><img src="/icons-teams/mibr.png" class="vct-logo"><h4>MIBR</h4><h5>O Orgulho do Brasil</h5></div>
+      </div>
+      <div class="team-link" data-team="heretics">
+        <div class="vct-team"><img src="/icons-teams/th.png" class="vct-logo"><h4>Team Heretics</h4><h5>A Tempestade Europeia</h5></div>
+      </div>
+      <div class="team-link" data-team="g2">
+        <div class="vct-team"><img src="/icons-teams/g2.png" class="vct-logo"><h4 class="vct-text">G2 Esports</h4><h5>A Fúria Americano-Europeia</h5></div>
+      </div>
+      <div class="team-link" data-team="giantx">
+        <div class="vct-team"><img src="/icons-teams/gtx.png" class="vct-logo"><h4>GIANTX</h4><h5>A Revelação Europeia</h5></div>
+      </div>
+      <div class="team-link" data-team="bilibili gaming">
+        <div class="vct-team"><img src="/icons-teams/blg.png" class="vct-logo"><h4>Bilibili Gaming</h4><h5>Brilho, velocidade e criatividade</h5></div>
+      </div>
+      <div class="team-link" data-team="sentinels">
+        <div class="vct-team"><img src="/icons-teams/sen.png" class="vct-logo"><h4>Sentinels</h4><h5>Os guardiões do servidor estão de volta!</h5></div>
+      </div>
+      <div class="team-link" data-team="t1">
+        <div class="vct-team"><img src="/icons-teams/t1.png" class="vct-logo"><h4>T1</h4><h5>T1 chega para dominar o servidor!</div>
+      </div>
+      <div class="team-link" data-team="dragon ranger gaming">
+        <div class="vct-team"><img src="/icons-teams/drg.png" class="vct-logo"><h4>Dragon Ranger Gaming</h4><h5>DRG pisou no mapa e a caça começou!</h5></div>
+      </div>
+      <div class="team-link" data-team="edward gaming">
+        <div class="vct-team"><img src="/icons-teams/edg.png" class="vct-logo"><h4>Edward Gaming</h4><h5>EDG avança com a força de um gigante.</h5></div>
+      </div>
+      <div class="team-link" data-team="xlg esports">
+        <div class="vct-team"><img src="/icons-teams/xlg.png" class="vct-logo"><h4>XLG Esports</h4><h5>Energia máxima</h5></p></div>
+      </div>
+      <div class="team-link" data-team="team liquid">
+        <div class="vct-team"><img src="/icons-teams/tl.png" class="vct-logo"><h4 class="vct-text">Team Liquid</h4><h5>A cavalaria chegou!</h5></div>
+      </div>
+      <div class="team-link" data-team="rex regum qeon">
+        <div class="vct-team"><img src="/icons-teams/rrq.png" class="vct-logo"><h4>Rex Regum Qeon</h4><h5>Os reis retornam!</h5></div>
+      </div>
+    </div>
+  </section>
+
+  <!--Notícias e Atualizações do VCT -->
+  <section id="vct-news" class="vct-news">
+    <h2 class="section-title">Notícias Recentes do VCT</h2>
+    <div class="news-container">
+      <article class="news-item">
+        <h3>Mudanças de Patch Impactam Meta</h3>
+        <p>Riot introduz ajustes em agentes como Jett, Omen e Skye. Estratégias de ataque e defesa devem mudar bastante nos campeonatos.</p>
+      </article>
+      <article class="news-item">
+        <h3>Transferências Surpreendentes</h3>
+        <p>Grandes estrelas trocam de time antes do Stage 1. As expectativas para as novas escalações estão altíssimas.</p>
+      </article>
+      <article class="news-item">
+        <h3>Novo Mapa em Desenvolvimento</h3>
+        <p>Rumores indicam que um novo mapa inspirado no sudeste asiático está chegando ao Valorant em breve.</p>
+      </article>
+    </div>
+  </section>
+
+  <section id="events-section" class="events-section">
+    <h2 class="events-title">Eventos Oficiais do VCT 2026</h2>
+    <h3 class="events-subtitle">Regiões</h3>
+    <div id="events-list"></div>
+  </section>
+
+  <!--Ranking de Popularidade dos Times -->
+  <section id="popularity-section" class="popularity-section enhanced">
+    <h2 class="section-title">Times Mais Populares da Temporada</h2>
+    <ul class="popularity-list">
+      <li class="popularity-item">
+      <span class="rank">1º</span>
+        <div class="team-info">
+          <img src="/icons-teams/fnc.png" alt="FNATIC ICON" class="team-icon">
+          <p class="team-text"><strong>FNATIC</strong> — Engajamento global recorde</p>
+        </div>
+      </li>
+
+
+      <li class="popularity-item">
+      <span class="rank">2º</span>
+        <div class="team-info">
+          <img src="/icons-teams/drx.png" alt="DRX ICON" class="team-icon">
+          <p class="team-text"><strong>DRX</strong> — Fandom asiático extremamente ativo</p>
+        </div>
+      </li>
+
+
+      <li class="popularity-item">
+        <span class="rank">3º</span>
+        <div class="team-info">
+          <img src="/icons-teams/prx.png" alt="PAPER REX ICON" class="team-icon">
+          <p class="team-text"><strong>Paper Rex</strong> — Estilo agressivo conquistou o público</p>
+        </div>
+      </li>
+
+
+      <li class="popularity-item">
+        <span class="rank">4º</span>
+        <div class="team-info">
+          <img src="/icons-teams/nrg.png" alt="NRG ICON" class="team-icon">
+          <p class="team-text"><strong>NRG</strong> — Marca forte e jogadores carismáticos</p>
+        </div>
+      </li>
+
+
+      <li class="popularity-item">
+        <span class="rank">5º</span>
+        <div class="team-info">
+          <img src="/icons-teams/mibr.png" alt="MIBR ICON" class="team-icon">
+          <p class="team-text"><strong>MIBR</strong> — Comunidade brasileira impulsiona o hype</p>
+        </div>
+      </li>
+    </ul>
+  </section>
+
+  <footer class="valorant-footer">
+    <div class="footer-inner">
+      <h2 class="footer-logo">SpikeZone</h2>
+      <p class="footer-text">Onde os agentes se tornam lendas.</p>
+      <div class="footer-links">
+        <a href="/pagina_central/inicio/inicio.html">Início</a>
+        <a href="/pagina_central/eventos/eventos.html">Eventos</a>
+        <a href="/pagina_central/contato/contato.html">Contato</a>
+      </div>
+      <div class="social-links">
+        <a href="https://x.com" title="x"><i class="fab fa-x"></i></a>
+        <a href="https://instagram.com" title="Instagram"><i class="fab fa-instagram"></i></a>
+        <a href="https://github.com" title="GitHub"><i class="fab fa-github"></i></a>
+        <a href="https://linkedin.com" title="LinkedIn"><i class="fab fa-linkedin"></i></a>
+        <a href="https://discord.com" title="Discord"><i class="fab fa-discord"></i></a>
+      </div>
+      <div class="footer-divider"></div>
+      <p class="footer-copy">© 2025 <span>SpikeZone</span> | Inspirado no universo Valorant<br>Desenvolvido por <span class="dev-name">TechEd</span></p>
+    </div>
+  </footer>
+
+  <script src="/pagina_central/eventos/eventos.js"></script>
+</body>
+</html>

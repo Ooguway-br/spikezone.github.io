@@ -1,0 +1,294 @@
+<!DOCTYPE html>
+<html lang="pt-BR" data-team="loud">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>SpikeZone</title>
+  <link rel="stylesheet" href="inicio.css">
+  <link rel="icon" href="/images/favicon_io/android-chrome-512x512.png">
+  <link rel="appel-touch-icon" href="/images/favicon_io/apple-touch-icon.png">
+  <meta name="theme-color" content="#FF4500">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&family=Rajdhani:wght@600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+  <div class="neon-particles"></div>
+
+  <!-- ============================ HEADER ============================ -->
+  <header>
+    <div class="logo-container">
+      <img src="/images/Logo SpikeZone.png" alt="Logo SpikeZone">
+    </div>
+
+    <nav class="nav-links">
+      <a href="/pagina_central/inicio/inicio.html">Inicio</a>
+      <a href="/pagina_central/eventos/eventos.html">Eventos</a>
+      <a href="#sobre">Sobre</a>
+      <a href="/pagina_central/contato/contato.html">Contato</a>
+    </nav>
+  </header>
+
+  <!-- ============================ HERO ============================ -->
+  <section class="hero-riot">
+    <img src="/images/bg-valorant.jpg" alt="Banner" class="hero-riot-img">
+
+    <div class="hero-riot-content">
+        <h1>Onde os agentes se tornam lendas</h1>
+        <p>
+            Descubra os melhores times, eventos e jogadores do universo competitivo de Valorant.
+        </p>
+    </div>
+</section>
+
+  <!-- ============================ TIMES ============================ -->
+  <section id="times" class="section">
+    <h2 class="section-title">Times Lendários</h2>
+    <div class="card-grid teams">
+
+      <a href="/pagina_central/eventos/eventos.html" class="team-link">
+        <div class="team-card" data-team="acend">
+          <img src="/images/acend.png" alt="Acend">
+          <strong>Acend</strong>
+        </div>
+      </a>
+
+      <a href="/pagina_central/eventos/eventos.html" class="team-link">
+        <div class="team-card" data-team="loud">
+          <img src="/images/LOUD_logo.png" alt="LOUD">
+          <strong>LOUD</strong>
+        </div>
+      </a>
+
+      <a href="/pagina_central/eventos/eventos.html" class="team-link">
+        <div class="team-card" data-team="eg">
+          <img src="/images/eg.png" alt="Evil Geniuses">
+          <strong>Evil Geniuses</strong>
+        </div>
+      </a>
+
+      <a href="/pagina_central/eventos/eventos.html" class="team-link">
+        <div class="team-card" data-team="edg">
+          <img src="/images/edg.png" alt="EDward Gaming">
+          <strong>EDG</strong>
+        </div>
+      </a>
+
+      <a href="/pagina_central/eventos/eventos.html" class="team-link">
+        <div class="team-card" data-team="nrg">
+          <img src="/images/nrg-s-fun.png" alt="NRG">
+          <strong>NRG</strong>
+        </div>
+      </a>
+    </div>
+  </section>
+
+  <section id="champ-video">
+    <div class="event-hero">
+      <video id="event-video" autoplay muted playsinline></video>
+
+      <div id="paused-overlay"></div>
+
+      <div class="video-controls">
+        <button id="sound-btn" class="sound-toggle">
+          <i class="fa-solid fa-volume-high sound-icon sound-on active"></i>
+          <i class="fa-solid fa-volume-xmark sound-icon sound-off"></i>
+        </button>
+      </div>
+
+      <button id="playPauseBtn" class="sound-toggle">
+        <i class="fa-solid fa-play"></i>
+      </button>
+    </div>
+  </section>
+
+  <!-- ============================ SOBRE ============================ -->
+  <section class="section about">
+  <h2 id="sobre" class="section-title">Sobre a SpikeZone</h2>
+
+  <p>
+    A <strong>SpikeZone</strong> é uma plataforma criada para conectar fãs, jogadores e equipes do universo de Valorant.
+    Nosso objetivo é oferecer um ambiente moderno, dinâmico e informativo onde todos possam acompanhar suas organizações
+    favoritas, explorar estatísticas, analisar jogadores e ficar por dentro dos principais campeonatos do cenário.
+  </p>
+
+  <p>
+    Inspirada na estética futurista e competitiva do jogo, a SpikeZone foi desenvolvida com foco em 
+    <strong>performance</strong>, <strong>design</strong> e <strong>imersão</strong>. Cada elemento visual foi pensado
+    para trazer uma experiência semelhante ao universo neon e tecnológico que define Valorant.
+  </p>
+
+  <p>
+    Nosso time busca constantemente atualizar conteúdos, trazer novos times, destacar talentos emergentes e manter a
+    comunidade informada sobre as maiores disputas do cenário internacional — desde Challengers até eventos Masters e Champions.
+  </p>
+
+  <p>
+    Além disso, a SpikeZone foi construída para ser mais do que um site: queremos criar um ponto de encontro para apaixonados pelo FPS da Riot Games. 
+    Aqui você encontra:
+  </p>
+
+  <ul class="about-list">
+    <li><strong>Perfis completos de jogadores</strong> com papéis, estatísticas e histórico competitivo.</li>
+    <li><strong>Análises de equipes</strong> com cores personalizadas, logos oficiais e informações atualizadas.</li>
+    <li><strong>Cobertura de eventos</strong> com datas, formato e maiores destaques.</li>
+    <li><strong>Artigos e curiosidades</strong> sobre o cenário, estratégias e evolução das composições.</li>
+  </ul>
+
+  <p>
+    A SpikeZone continua em evolução. Em breve, novos recursos serão adicionados, como rankings interativos,
+    comparadores de jogadores, linha do tempo competitiva e ferramentas para análise de desempenho.
+  </p>
+
+  <p>
+    Nosso compromisso é entregar uma plataforma que celebre a comunidade, valorize o cenário competitivo 
+    e mantenha vivo o espírito de rivalidade saudável que torna Valorant único.
+  </p>
+
+  <p><strong>SpikeZone — Onde os agentes se tornam lendas.</strong></p>
+</section>
+
+  <section class="section history">
+  <h2 id="section history" class="section-title">Nossa História</h2>
+
+  <div class="history-cards">
+    
+    <div class="history-card neon-border">
+      <i class="fas fa-bolt"></i>
+      <h3>O Começo</h3>
+      <p>A SpikeZone nasceu com a ideia de unir fãs do cenário competitivo de Valorant em uma plataforma visual,
+      dinâmica e fiel ao universo do jogo.</p>
+    </div>
+
+    <div class="history-card neon-border">
+      <i class="fas fa-users"></i>
+      <h3>Crescimento da Comunidade</h3>
+      <p>Com o aumento de jogadores e torcedores, expandimos nossos recursos, trazendo perfis completos,
+      comparações e informações detalhadas sobre times e eventos.</p>
+    </div>
+
+    <div class="history-card neon-border">
+      <i class="fas fa-trophy"></i>
+      <h3>Conexão com o Competitivo</h3>
+      <p>Integramos dados de grandes campeonatos, permitindo que fãs acompanhem suas equipes com precisão
+      e imersão total.</p>
+    </div>
+
+  </div>
+</section>
+
+<section class="timeline-section">
+    <h2 class="timeline-title">Evolução do SpikeZone</h2>
+
+    <div class="timeline">
+
+        <!-- 2020 -->
+        <div class="timeline-item left">
+
+            <div class="timeline-content neon-card">
+                <h3>2020 – A Ideia</h3>
+                <p>Primeiros esboços da plataforma surgem, inspirados na estética futurista de Valorant.</p>
+            </div>
+
+            <div class="timeline-center">
+                <span class="dot"></span>
+                <span class="line"></span>
+            </div>
+        </div>
+
+        <!-- 2021 -->
+        <div class="timeline-item right">
+
+            <div class="timeline-center">
+                <span class="dot"></span>
+                <span class="line"></span>
+            </div>
+
+            <div class="timeline-content neon-card">
+                <h3>2021 – Protótipo</h3>
+                <p>Versão inicial com cards de jogadores e equipes é lançada experimentalmente.</p>
+            </div>
+        </div>
+
+        <!-- 2023 -->
+        <div class="timeline-item left">
+
+            <div class="timeline-content neon-card">
+                <h3>2023 – Expansão</h3>
+                <p>Nova interface, mais responsiva e imersiva, atrai milhares de visitantes.</p>
+            </div>
+
+            <div class="timeline-center">
+                <span class="dot"></span>
+                <span class="line"></span>
+            </div>
+        </div>
+
+        <!-- 2025 -->
+        <div class="timeline-item right">
+
+            <div class="timeline-center">
+                <span class="dot"></span>
+                <span class="line"></span>
+            </div>
+
+            <div class="timeline-content neon-card">
+                <h3>2025 – SpikeZone Atual</h3>
+                <p>Plataforma completa com dados competitivos, visual neon e experiência única.</p>
+            </div>
+        </div>
+
+    </div>
+</section>
+
+<section id="section features" class="section features">
+  <h2 class="section-title">Destaques da Plataforma</h2>
+
+  <div class="feature-grid">
+
+    <div class="feature-card neon-border">
+      <i class="fas fa-database feature-icon"></i>
+      <h3>Banco de Jogadores</h3>
+      <p>Informações detalhadas de atletas, completo com estatísticas e histórico competitivo.</p>
+    </div>
+
+    <div class="feature-card neon-border">
+      <i class="fas fa-shield-alt feature-icon"></i>
+      <h3>Equipes Oficiais</h3>
+      <p>Times atualizados com paletas personalizadas, logos e dados dos campeonatos.</p>
+    </div>
+
+    <div class="feature-card neon-border">
+      <i class="fas fa-broadcast-tower feature-icon"></i>
+      <h3>Eventos e Torneios</h3>
+      <p>Calendário visual e organizado, incluindo Masters, Champions e regionais.</p>
+    </div>
+  </div>
+</section>
+
+  <!-- ============================ FOOTER ============================ -->
+  <footer class="valorant-footer">
+    <div class="footer-logo">SPIKEZONE</div>
+    <p>Onde os agentes se tornam lendas.</p>
+    <div class="footer-links">
+      <a href="/pagina_central/inicio/inicio.html">Inicio</a>
+      <a href="/pagina_central/eventos/eventos.html">Eventos</a>
+      <a href="/pagina_central/contato/contato.html">Contato</a>
+    </div>
+    <div class="social-links">
+                <a href="https://x.com" title="x"><i class="fab fa-x"></i></a>
+                <a href="https://instagram.com" title="Instagram"><i class="fab fa-instagram"></i></a>
+                <a href="https://github.com" title="GitHub"><i class="fab fa-github"></i></a>
+                <a href="https://linkedin.com" title="LinkedIn"><i class="fab fa-linkedin"></i></a>
+                <a href="https://discord.com" title="Discord"><i class="fab fa-discord"></i></a>
+            </div>
+    <div class="footer-divider"></div>
+    <p class="footer-copy">
+      © 2025 <span>SpikeZone</span> | Inspirado no universo Valorant<br>
+      Desenvolvido por <span class="dev-name">TechEd</span>
+    </p>
+  </div>
+  </footer>
+
+  <script src="inicio.js"></script>
+</body>
+</html>
