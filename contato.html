@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html lang="pt-BR" data-theme="dark">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="contato.css">
+    <link rel="icon" href="/images/favicon_io/android-chrome-512x512.png">
+    <link rel="appel-touch-icon" href="/images/favicon_io/apple-touch-icon.png">
+    <meta name="theme-color" content="#FF4500">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&family=Rajdhani:wght@600;700&display=swap" rel="stylesheet">
+    <title>SpikeZone | Contato</title>
+</head>
+<body>
+
+    <div class="neon-particles"></div>
+    <header>
+        <div class="logo-container">
+            <a href="/pagina_central/inicio/inicio.html">
+                <img src="/images/Logo SpikeZone.png" alt="SpikeZone Logo" class="logo">
+            </a>
+        </div>
+
+        <nav class="nav-links">
+            <a href="/pagina_central/inicio/inicio.html">Início</a>
+            <a href="/pagina_central/eventos/eventos.html">Eventos</a>
+            <a href="/pagina_central/contato/contato.html" class="active">Contato</a>
+        </nav>
+    </header>
+
+<main>
+    <h1 class="page-title">Entre em Contato</h1>
+
+    <!-- GRID PRINCIPAL -->
+    <div class="contact-grid">
+
+        <!-- FORMULÁRIO -->
+        <div class="form-container neon-box">
+            <section class="contact-form">
+                <h2 class="subtitle-neon">Envie sua Mensagem</h2>
+
+                <form id="formContato" action="#" method="post">
+                    <label for="nome">Nome Completo</label>
+                    <input type="text" id="nome" name="nome" required>
+
+                    <label for="email">E-mail</label>
+                    <input type="email" id="email" name="email" required>
+
+                    <label for="numero">Número de Telefone</label>
+                    <input type="tel" id="numero" name="numero" required>
+
+                    <label for="motivo">Motivo do Contato</label>
+                    <select id="motivo" name="motivo" required>
+                        <option value="">Selecione...</option>
+                        <option value="eventos">Informações sobre eventos</option>
+                        <option value="parcerias">Parcerias</option>
+                        <option value="suporte">Suporte técnico</option>
+                        <option value="outros">Outros</option>
+                    </select>
+
+                    <label for="mensagem">Mensagem</label>
+                    <textarea id="mensagem" name="mensagem" rows="5" required></textarea>
+
+                    <button type="submit" class="btn-enviar">
+                        Enviar
+                    </button>
+                </form>
+            </section>
+        </div>
+
+        <!-- INFORMAÇÕES -->
+        <div class="info-container neon-box">
+            <section class="contact-info">
+                <h2 class="info-title">Informações de Contato</h2>
+
+    <p class="info-text">
+        <i class="fas fa-map-marker-alt icon"></i>
+        <strong>Endereço:</strong> Avenida Washington Soares, 3500 — Edifício TechTower — Bairro Edson Queiroz, Fortaleza, CE
+    </p>
+
+    <p class="info-text">
+        <i class="fas fa-phone icon"></i>
+        <strong>Telefone:</strong> (85) 98498-2712
+    </p>
+
+    <p class="info-text">
+        <i class="fas fa-envelope icon"></i>
+        <strong>E-mail:</strong> contato@spikezone.com
+    </p>
+
+    <p class="info-text">
+        <i class="fas fa-clock icon"></i>
+        <strong>Atendimento:</strong> Segunda a Sexta, das 9h às 18h
+    </p>
+
+    <hr class="divider">
+
+    <h3 class="info-subtitle">Sobre o Suporte</h3>
+    <p class="info-desc">
+        A equipe da <strong>SpikeZone</strong> está pronta para ajudar você com qualquer necessidade relacionada ao
+        nosso ecossistema competitivo. Entre em contato para:
+    </p>
+
+    <ul class="info-list">
+        <li>📌 Informações sobre torneios e eventos;</li>
+        <li>🤝 Oportunidades de parcerias ou colaborações;</li>
+        <li>🛠 Suporte técnico e resolução de problemas;</li>
+        <li>💬 Dúvidas gerais sobre nossos serviços e plataformas.</li>
+    </ul>
+
+    <p class="info-footer">
+        Estamos sempre trabalhando para oferecer a melhor experiência para jogadores,
+        equipes e organizações do cenário competitivo.
+    </p>
+            </section>
+        </div>
+
+    </div>
+</main>
+
+<footer class="valorant-footer">
+    <div class="footer-logo">SPIKEZONE</div>
+    <p>Onde os agentes se tornam lendas.</p>
+    <div class="footer-links">
+      <a href="/pagina_central/inicio/inicio.html">Inicio</a>
+      <a href="/pagina_central/eventos/eventos.html">Eventos</a>
+      <a href="/pagina_central/contato/contato.html">Contato</a>
+    </div>
+    <div class="social-links">
+                <a href="https://x.com" title="x"><i class="fab fa-x"></i></a>
+                <a href="https://instagram.com" title="Instagram"><i class="fab fa-instagram"></i></a>
+                <a href="https://github.com" title="GitHub"><i class="fab fa-github"></i></a>
+                <a href="https://linkedin.com" title="LinkedIn"><i class="fab fa-linkedin"></i></a>
+                <a href="https://discord.com" title="Discord"><i class="fab fa-discord"></i></a>
+            </div>
+    <div class="footer-divider"></div>
+    <p class="footer-copy">
+      © 2025 <span>SpikeZone</span> | Inspirado no universo Valorant<br>
+      Desenvolvido por <span class="dev-name">TechEd</span>
+    </p>
+  </div>
+  </footer>
+
+<!-- SCRIPT DE ANIMAÇÃO -->
+<script defer>
+document.getElementById("formContato").addEventListener("submit", function(e) {
+    e.preventDefault();
+
+    const btn = document.querySelector(".btn-enviar");
+
+    // Iniciar carregamento
+    btn.classList.add("loading");
+    btn.innerHTML = `<span class="spinner"></span> Enviando...`;
+
+    setTimeout(() => {
+        btn.classList.remove("loading");
+        btn.classList.add("success");
+        btn.textContent = "Enviado!";
+
+        // Remover brilho depois de 2s
+        setTimeout(() => {
+            btn.classList.remove("success");
+            btn.textContent = "Enviar";
+        }, 2000);
+
+    }, 2000);
+});
+</script>
+
+</body>
+</html>

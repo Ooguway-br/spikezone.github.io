@@ -1,0 +1,323 @@
+:root {
+  --color-bg: #0c0c0c;
+  --color-surface: #111;
+  --color-surface-alt: #151515;
+  --color-border: #333;
+  --color-text: #f1f1f1;
+  --color-text-muted: #888;
+  --color-text-soft: #ccc;
+  --color-shadow: rgba(0, 0, 0, 0.4);
+  --color-highlight: #FFD54A;
+  --color-shadow-highlight: rgba(255, 213, 74, 0.25);
+  --color-shadow-soft: rgba(255, 213, 74, 0.05);
+  --color-accent-red: rgba(255, 70, 85, 0.2);
+  --color-primary: #ff3c00;
+  --color-dark: #0f0f0f;
+  --color-light: #fff;
+  --font-main: "Poppins", sans-serif;
+  --font-title: "Rajdhani", sans-serif;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+/* ============================
+   BASE GERAL
+=============================== */
+body {
+  background-color: #0c0c0c;
+  color: #fff;
+  margin: 0;
+  font-family: 'Poppins', sans-serif;
+}
+/* ============================
+   HEADER
+=============================== */
+header {
+  display: flex;
+  align-items: center;
+  justify-content: center; /* centraliza o título */
+  position: relative;
+  background: #0c0c0c; /* fixo escuro */
+  border-bottom: 1px solid rgba(255, 255, 255, 0.08);
+  box-shadow: 0 0 15px rgba(0, 0, 0, 0.6);
+  padding: 1.5rem 0;
+  z-index: 10;
+}
+
+
+/* ============================
+   BOTÃO VOLTAR TEMÁTICO
+=============================== */
+.back-button {
+  display: relative;
+  margin: 1.5rem;
+  padding: 0.75rem 1.5rem;
+  font-size: 1rem;
+  font-weight: 600;
+  color: #fff;
+  background: var(--color-primary, #00ff9c);
+  border: none;
+  border-radius: 12px;
+  text-decoration: none;
+  box-shadow: 0 0 20px var(--color-glow, #00ff9c60);
+  transition: all 0.25s ease-in-out;
+  cursor: pointer;
+}
+
+.back-button:hover {
+  background: var(--team-primary, #00ff9c);
+  color: #0c0c0c;
+  box-shadow: 0 0 25px var(--team-primary, #00ff9c),
+              0 0 45px var(--team-primary, #00ff9c70);
+  transform: scale(1.05);
+}
+
+.back-button:active {
+  transform: scale(0.97);
+  opacity: 0.9;
+  box-shadow: 0 0 10px var(--team-primary, #00ff9c);
+}
+
+
+/* ============================
+   CONTAINER CENTRAL DO PLAYER
+=============================== */
+.profile-container {
+  max-width: 900px;
+  margin: 60px auto;
+  background: var(--color-surface-alt);
+  border: 1px solid var(--color-border);
+  border-radius: 20px;
+  padding: 40px 30px;
+  text-align: center;
+  box-shadow: 0 0 20px var(--color-shadow-soft);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  animation: fadeIn 0.8s ease forwards;
+  transition: box-shadow 0.3s ease, border-color 0.3s ease;
+}
+
+.player-card-detail {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  gap: 20px;
+}
+
+/* ============================
+   FOTO DO JOGADOR
+=============================== */
+.player-avatar {
+  width: 220px;
+  height: 220px;
+  border-radius: 50%;
+  border: 3px solid var(--color-highlight);
+  box-shadow: 0 0 20px var(--color-shadow-highlight);
+  object-fit: cover;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.player.bio {
+  text-align: center;
+  max-width: 600px;
+}
+
+/* Efeito hover na imagem */
+.player-avatar:hover {
+  transform: scale(1.05);
+  box-shadow: 0 0 25px var(--color-highlight);
+}
+
+/* ============================
+   INFORMAÇÕES DO JOGADOR
+=============================== */
+#player-name-title {
+  color: var(--color-highlight);
+  position: relative;
+  margin: 0 auto;
+  text-align: center;
+  display: block;
+  font-size: 2.3rem;
+  font-weight: 700;
+  margin-bottom: 10px;
+  flex: 1;
+  margin-right: 2rem;
+  text-shadow: 0 0 10px var(--color-shadow-highlight);
+}
+
+#player-role {
+  color: var(--color-text-soft);
+  font-weight: 500;
+  font-size: 1.1rem;
+  margin-bottom: 10px;
+}
+
+#player-team {
+  color: var(--color-highlight);
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  margin-bottom: 25px;
+  text-shadow: 0 0 6px var(--color-shadow-highlight);
+  transition: color 0.3s ease, text-shadow 0.3s ease;
+}
+
+#player-bio {
+  color: var(--color-text-soft);
+  line-height: 1.6;
+  font-size: 1rem;
+  max-width: 600px;
+  margin: 0 auto;
+}
+
+/* ============================
+   RESPONSIVIDADE
+=============================== */
+@media (max-width: 768px) {
+  .player-container {
+    padding: 40px 20px;
+  }
+
+  .player-avatar {
+    width: 160px;
+    height: 160px;
+  }
+
+  #player-name-title {
+    font-size: 1.8rem;
+  }
+}
+
+
+
+/* ============================
+   RESPONSIVIDADE
+=============================== */
+@media (max-width: 768px) {
+  .player-container {
+    padding: 40px 20px;
+  }
+
+  .player-avatar {
+    width: 160px;
+    height: 160px;
+  }
+
+  #player-name-title {
+    font-size: 1.7rem;
+  }
+}
+
+/* ============================
+   FOOTER
+=============================== */
+.valorant-footer {
+  margin-top: 60px;
+  background: linear-gradient(180deg, var(--color-surface, #0e0e0e) 0%, #000 100%);
+  border-top: 2px solid var(--color-primary, #00ff9c);
+  box-shadow: 0 -4px 25px var(--color-glow, #00ff9c40);
+  color: #ccc;
+  text-align: center;
+  padding: 60px 20px 30px;
+  font-family: 'Poppins', sans-serif;
+  position: relative;
+  transition: all 0.5s ease;
+}
+
+.footer-inner {
+  max-width: 900px;
+  margin: 0 auto;
+}
+
+.footer-logo {
+  font-size: 1.8rem;
+  font-weight: 700;
+  letter-spacing: 1px;
+  color: var(--color-primary, #00ff9c);
+  text-shadow: 0 0 15px var(--color-glow, #00ff9c80);
+  margin-bottom: 8px;
+  transition: all 0.3s ease;
+}
+
+.footer-text {
+  font-size: 0.95rem;
+  color: #aaa;
+  margin-bottom: 30px;
+}
+
+.footer-links, .social-links {
+  display: flex;
+  justify-content: center;
+  gap: 25px;
+  flex-wrap: wrap;
+  margin-bottom: 20px;
+}
+
+.footer-links a, .social-links a {
+  color: #aaa;
+  text-decoration: none;
+  font-size: 0.95rem;
+  transition: all 0.3s ease;
+}
+
+.footer-links a:hover, .social-links a:hover {
+  color: var(--color-primary, #00ff9c);
+  text-shadow: 0 0 10px var(--color-glow, #00ff9c70);
+}
+
+.social-links i {
+  font-size: 1.2rem;
+}
+
+.footer-divider {
+  width: 80%;
+  height: 1px;
+  background: linear-gradient(90deg, transparent, var(--color-primary, #00ff9c), transparent);
+  margin: 25px auto;
+  opacity: 0.7;
+}
+
+.footer-copy {
+  font-size: 0.85rem;
+  color: #777;
+  line-height: 1.5;
+}
+
+.footer-copy span {
+  color: var(--color-primary, #00ff9c);
+  font-weight: 600;
+}
+
+.dev-name {
+  color: #fff;
+  text-shadow: 0 0 8px var(--color-glow, #00ff9c70);
+}
+
+/* Responsivo */
+@media (max-width: 600px) {
+  .footer-links, .social-links {
+    gap: 15px;
+  }
+
+  .footer-logo {
+    font-size: 1.5rem;
+  }
+}
+/* ============================
+   ANIMAÇÃO SUAVE
+=============================== */
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(15px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
